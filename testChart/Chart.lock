@@ -1,0 +1,6 @@
+dependencies:
+- name: secrets-helper
+  repository: https://jeffreygarrett.github.io/helm-helpers/
+  version: 0.1.0
+digest: sha256:5511ce1752d8c41cc1bfce2c254f859c33b0a7ac4480d1dc58746078f6943362
+generated: "2020-07-23T19:52:13.703645-07:00"
