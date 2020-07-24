@@ -13,8 +13,8 @@ spec:
       app.kubernetes.io/instance: {{ .Release.Name }}
   template:
     metadata:
-      annotations: {{-
-       /* 
+      annotations: 
+        {{- /* 
       #TODO: 
       checksum/config: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}  
       need to include back in nested infinite loop */ -}}

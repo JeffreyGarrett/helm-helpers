@@ -1,2 +1,4 @@
-{{- include "fdr-helper.ingress.tpl" . }}
-{{- include "fdr-helper.service.tpl" . }}
+{{- include "fdr-helper.fullApp" (list . "testChart.fullApp") -}}
+{{- define "testChart.fullApp" -}}
+
+{{- end -}}

@@ -1,16 +1,11 @@
 {{- define "fdr-helper.fullApp.tpl" -}}
 {{- include "fdr-helper.databaseJobsMigrate.tpl" . }}
 {{ if .Values.loadSeedData }}
----
 {{- include "fdr-helper.databaseJobsLoadSeedData.tpl" . }}
 {{ end }}
----
 {{- include "fdr-helper.configmap.tpl" . }}
----
 {{- include "fdr-helper.databaseSecret.tpl" . }}
----
 {{- include "fdr-helper.deployment.tpl" . }}
----
 {{- include "fdr-helper.ingress.tpl" . }}
 {{- include "fdr-helper.service.tpl" . }}
 {{- end -}}
