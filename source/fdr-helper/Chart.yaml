@@ -1,0 +1,6 @@
+apiVersion: v2
+name: fdr-helper
+description: fdr specific templates
+type: library
+version: 0.1.0
+appVersion: 1.16.0

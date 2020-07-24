@@ -70,11 +70,11 @@ tags:
   kubeDb: true
 
 # Aliased from "postgresql" chart
-aggregation-db:
+application-db:
   postgresqlDatabase: aggregation
   postgresqlUsername: test # DB admin user
   postgresqlPassword: test # DB admin pass
-  service.port: 5432  # Default
+  port: 5432  # Default
 
 # If defined, will fetch DB connection info from AWS Secrets
 dbSecretName: ''  
