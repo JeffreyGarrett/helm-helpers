@@ -1,0 +1,10 @@
+{{- define "secrets-helper.configmap.tpl" -}}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name | printf "%s-%s" .Chart.Name }}
+data: {}
+{{- end -}}
+{{- define "secrets-helper.configmap" -}}
+{{- include "secrets-helper.util.merge" (append . "secrets-helper.configmap.tpl") -}}
+{{- end -}}
