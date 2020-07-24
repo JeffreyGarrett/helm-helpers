@@ -4,13 +4,16 @@
 ---
 {{- include "fdr-helper.databaseJobsLoadSeedData.tpl" . -}}
 {{ end }}
+---
 {{- include "fdr-helper.configmap.tpl" . -}}
-{{- include "fdr-helper.configmap.tpl" . -}}
+---
 {{- include "fdr-helper.databaseSecret" . -}}
+---
 {{- include "fdr-helper.deployment" . -}}
+---
 {{- include "fdr-helper.ingress" . -}}
+---
 {{- include "fdr-helper.service" . -}}
-
 {{- end -}}
 {{- define "fdr-helper.fullApp" -}}
 {{- include "fdr-helper.util.merge" (append . "fdr-helper.fullApp.tpl") -}}

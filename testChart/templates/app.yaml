@@ -1,1 +1,5 @@
-{{- include "fdr-helper.fullApp" . -}}
+
+{{- include "fdr-helper.fullApp" (list . "testChart.fullApp") -}}
+{{- define "testChart.fullApp" -}}
+
+{{- end -}}
