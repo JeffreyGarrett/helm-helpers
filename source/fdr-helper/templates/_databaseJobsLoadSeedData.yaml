@@ -54,7 +54,7 @@ spec:
           command: ["npm", "run", "db:seed"]
       restartPolicy: Never
   backoffLimit: 4
-{{- end -}}
+{{- end }}
 {{- define "fdr-helper.databaseJobsLoadSeedData" -}}
 {{- include "fdr-helper.util.merge" (append . "fdr-helper.databaseJobsLoadSeedData.tpl") -}}
 {{- end -}}

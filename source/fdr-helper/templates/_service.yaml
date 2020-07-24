@@ -15,7 +15,7 @@ spec:
   selector:
     app.kubernetes.io/name: {{ include "application.name" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
-{{- end -}}
+{{- end }}
 {{- define "fdr-helper.service" -}}
 {{- include "fdr-helper.util.merge" (append . "fdr-helper.service.tpl") -}}
 {{- end -}}

@@ -84,8 +84,7 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
     {{- end }}
-
-{{- end -}}
+{{- end }}
 {{- define "fdr-helper.deployment" -}}
 {{- include "fdr-helper.util.merge" (append . "fdr-helper.deployment.tpl") -}}
 {{- end -}}

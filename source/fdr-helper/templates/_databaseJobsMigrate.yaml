@@ -74,7 +74,7 @@ spec:
           command: ["npm", "run", "db:migrate"]
       restartPolicy: Never
   backoffLimit: 4
-{{- end -}}
+{{- end }}
 {{- define "fdr-helper.databaseJobsMigrate" -}}
 {{- include "fdr-helper.util.merge" (append . "fdr-helper.databaseJobsMigrate.tpl") -}}
 {{- end -}}
