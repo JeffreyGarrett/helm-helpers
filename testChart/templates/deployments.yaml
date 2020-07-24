@@ -1,4 +1,4 @@
-{{- include "fdr-helper.deployment" (list . "testChart.databaseSecret") -}}
-{{- define "testChart.databaseSecret" -}}
+{{- include "fdr-helper.deployment" (list . "testChart.deployments") -}}
+{{- define "testChart.deployments" -}}
 
 {{- end -}}
