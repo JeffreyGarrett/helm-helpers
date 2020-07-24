@@ -11,7 +11,7 @@ if [ "$input" = "y" ]; then
     helm package source/*
 
     echo "rebuilding index"
-    helm repo index --url https://github.com/JeffreyGarrett/helm-helpers/ .
+    helm repo index --url https://jeffreygarrett.github.io/helm-helpers/ .
    else
     echo "stopping"
 fi
