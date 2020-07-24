@@ -10,4 +10,4 @@
 *.tmproj
 .vscode/
 # charts
-.testChart/charts/*
+/templates/**/charts/*

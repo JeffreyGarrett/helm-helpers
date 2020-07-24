@@ -1,5 +1,0 @@
-{{- include "fdr-helper.configmap" (list . "testChart.configmap") -}}
-{{- define "testChart.configmap" -}}
-
-{{- end -}}
-

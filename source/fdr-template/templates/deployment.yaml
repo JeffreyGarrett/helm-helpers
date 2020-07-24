@@ -1,4 +1,0 @@
-{{- include "fdr-helper.deployment" (list . "testChart.deployment") -}}
-{{- define "testChart.deployment" -}}
-
-{{- end -}}

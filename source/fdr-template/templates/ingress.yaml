@@ -1,4 +1,0 @@
-{{- include "fdr-helper.ingress" (list . "testChart.ingress") -}}
-{{- define "testChart.ingress" -}}
-
-{{- end -}}

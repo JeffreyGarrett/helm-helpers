@@ -1,5 +1,0 @@
-{{- include "fdr-helper.databaseJobsMigrate.tpl" . -}}
-{{ if .Values.loadSeedData }}
----
-{{- include "fdr-helper.databaseJobsLoadSeedData.tpl" . -}}
-{{ end }}
