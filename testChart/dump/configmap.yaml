@@ -11,3 +11,19 @@
 
 {{- end -}}
 */ -}}
+
+
+---
+{{- include "fdr-helper.deployment.tpl" . -}}
+
+---
+{{- include "fdr-helper.service.tpl" . -}}
+---
+{{- include "fdr-helper.configmap.tpl" . -}}
+---
+---
+{{- include "fdr-helper.databaseSecret.tpl" . -}}
+
+
+  ---
+{{- include "fdr-helper.deployment.tpl" . -}}

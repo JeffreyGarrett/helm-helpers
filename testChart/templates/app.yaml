@@ -4,6 +4,4 @@
 {{- include "fdr-helper.databaseJobsLoadSeedData.tpl" . -}}
 {{ end }}
 ---
-{{- include "fdr-helper.databaseSecret.tpl" . -}}
----
-{{- include "fdr-helper.deployment.tpl" . -}}
+{{- include "fdr-helper.ingress.tpl" . -}}

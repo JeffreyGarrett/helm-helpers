@@ -1,5 +1,4 @@
 {{- define "fdr-helper.databaseJobsMigrate.tpl" -}}
-
 apiVersion: batch/v1
 kind: Job
 metadata:
@@ -75,8 +74,6 @@ spec:
           command: ["npm", "run", "db:migrate"]
       restartPolicy: Never
   backoffLimit: 4
-
-
 {{- end -}}
 {{- define "fdr-helper.databaseJobsMigrate" -}}
 {{- include "fdr-helper.util.merge" (append . "fdr-helper.databaseJobsMigrate.tpl") -}}

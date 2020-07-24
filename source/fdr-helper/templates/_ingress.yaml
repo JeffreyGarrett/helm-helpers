@@ -35,8 +35,6 @@ spec:
         {{- end }}
   {{- end }}
 {{- end }}
-
-
 {{- end -}}
 {{- define "fdr-helper.ingress" -}}
 {{- include "fdr-helper.util.merge" (append . "fdr-helper.ingress.tpl") -}}

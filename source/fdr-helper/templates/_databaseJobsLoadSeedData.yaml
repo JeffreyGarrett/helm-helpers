@@ -1,5 +1,4 @@
 {{- define "fdr-helper.databaseJobsLoadSeedData.tpl" -}}
-
 apiVersion: batch/v1
 kind: Job
 metadata:
@@ -55,8 +54,6 @@ spec:
           command: ["npm", "run", "db:seed"]
       restartPolicy: Never
   backoffLimit: 4
-
-
 {{- end -}}
 {{- define "fdr-helper.databaseJobsLoadSeedData" -}}
 {{- include "fdr-helper.util.merge" (append . "fdr-helper.databaseJobsLoadSeedData.tpl") -}}
