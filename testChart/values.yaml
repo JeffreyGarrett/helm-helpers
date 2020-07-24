@@ -81,7 +81,7 @@ dbSecretName: ''
 
 seedDataSet: 'development'
 # On initial install, run db:seed to wipe/load test data:
-loadSeedData: false
+loadSeedData: true
 # Also run db:seed on upgrades:
 reloadSeedData: false
 authAudience: "https://fdr.cammis-mod-dev.dhcs.ca.gov"
