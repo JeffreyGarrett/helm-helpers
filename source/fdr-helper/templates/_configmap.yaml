@@ -1,4 +1,4 @@
-{{- define "fdr-helper.configmap" -}}
+{{- define "fdr-helper.configmap.tpl" -}}
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -16,4 +16,7 @@ data:
   AUTH_CLIENT_ID: '{{ .Values.authClientId }}'
   AUTH_LOG_LEVEL: '{{ .Values.authLogLevel }}'
   AUTH_TENANT: '{{ .Values.authTenant }}'
+{{- end -}}
+{{- define "fdr-helper.configmap" -}}
+{{- include "fdr-helper.util.merge" (append . "fdr-helper.configmap.tpl") -}}
 {{- end -}}

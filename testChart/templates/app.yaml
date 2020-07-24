@@ -1,1 +1,2 @@
-{{- include "fdr-helper.deployment " . }}
+{{- include "fdr-helper.ingress.tpl" . }}
+{{- include "fdr-helper.service.tpl" . }}
