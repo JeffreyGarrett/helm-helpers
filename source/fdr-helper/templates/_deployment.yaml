@@ -87,4 +87,4 @@ spec:
 {{- end }}
 {{- define "fdr-helper.deployment" -}}
 {{- include "fdr-helper.util.merge" (append . "fdr-helper.deployment.tpl") -}}
-{{- end -}}
+{{- end }}
