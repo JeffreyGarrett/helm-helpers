@@ -1,5 +1,4 @@
-{{- include "secrets-helper.configmap" (list . "testChart.configmap") -}}
+{{- include "fdr-helper.configmap" (list . "testChart.configmap") -}}
 {{- define "testChart.configmap" -}}
-data:
-  myvalue: "Hello World"
+
 {{- end -}}

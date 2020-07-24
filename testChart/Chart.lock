@@ -1,6 +1,6 @@
 dependencies:
-- name: secrets-helper
+- name: fdr-helper
   repository: https://jeffreygarrett.github.io/helm-helpers/
   version: 0.1.0
-digest: sha256:5511ce1752d8c41cc1bfce2c254f859c33b0a7ac4480d1dc58746078f6943362
-generated: "2020-07-23T19:52:13.703645-07:00"
+digest: sha256:789f14451583553ab969458e6fe544ba86e01a0ad8e2ce612217eeba5283c860
+generated: "2020-07-23T23:33:31.600963-07:00"

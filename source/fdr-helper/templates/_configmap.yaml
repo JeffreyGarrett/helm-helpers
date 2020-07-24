@@ -1,4 +1,4 @@
-{{- define "secrets-helper.configmap.tpl" -}}
+{{- define "fdr-helper.configmap.tpl" -}}
 
 apiVersion: v1
 kind: ConfigMap
@@ -20,6 +20,6 @@ data:
 
 
 {{- end -}}
-{{- define "secrets-helper.configmap" -}}
-{{- include "secrets-helper.util.merge" (append . "secrets-helper.configmap.tpl") -}}
+{{- define "fdr-helper.configmap" -}}
+{{- include "fdr-helper.util.merge" (append . "fdr-helper.configmap.tpl") -}}
 {{- end -}}
