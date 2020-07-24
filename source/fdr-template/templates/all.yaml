@@ -1,4 +1,1 @@
-{{- include "fdr-helper.configmap" (list . "testChart.configmap") -}}
-{{- define "testChart.configmap" -}}
-
-{{- end -}}
+{{- template "fdr-helper.deployment " -}}
