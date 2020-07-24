@@ -17,7 +17,9 @@ spec:
       {{- /* 
       #TODO: 
       checksum/config: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}  
-      need to include back in nested infinite loop */ -}}
+      need to include back in nested infinite loop 
+      */ -}}
+      
       labels:
         app.kubernetes.io/name: {{ include "application.name" . }}
         app.kubernetes.io/instance: {{ .Release.Name }}
