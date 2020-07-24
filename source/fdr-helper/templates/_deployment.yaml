@@ -13,7 +13,8 @@ spec:
       app.kubernetes.io/instance: {{ .Release.Name }}
   template:
     metadata:
-      annotations: # checksum/config: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}  
+      annotations: 
+       checksum/config: {{ include "fdr-helper.configmap" . | sha256sum }}  
       labels:
         app.kubernetes.io/name: {{ include "application.name" . }}
         app.kubernetes.io/instance: {{ .Release.Name }}
