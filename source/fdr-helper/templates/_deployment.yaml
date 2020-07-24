@@ -1,4 +1,4 @@
-{{- define "fdr-helper.deployment.tpl" -}}
+{{- define "fdr-helper.deployment" -}}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -87,7 +87,4 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
     {{- end }}
-{{- end -}}
-{{- define "fdr-helper.deployment" -}}
-{{- include "fdr-helper.util.merge" (append . "fdr-helper.deployment.tpl") -}}
 {{- end -}}

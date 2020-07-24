@@ -12,7 +12,6 @@
 {{- include "fdr-helper.deployment.tpl" . | indent 6 -}}
 ---
 {{- include "fdr-helper.ingress.tpl" . | indent 6 -}}
----
 {{- include "fdr-helper.service.tpl" . | indent 6 -}}
 {{- end -}}
 {{- define "fdr-helper.fullApp" -}}
