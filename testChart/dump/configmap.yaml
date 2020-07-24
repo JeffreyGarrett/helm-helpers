@@ -2,3 +2,12 @@
 {{- define "testChart.configmap" -}}
 
 {{- end -}}
+
+
+{{- /* 
+
+{{- include "fdr-helper.fullApp" (list . "testChart.fullApp") -}}
+{{- define "testChart.fullApp" -}}
+
+{{- end -}}
+*/ -}}

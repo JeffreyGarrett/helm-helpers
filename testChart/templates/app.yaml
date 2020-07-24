@@ -1,5 +1,9 @@
-
-{{- include "fdr-helper.fullApp" (list . "testChart.fullApp") -}}
-{{- define "testChart.fullApp" -}}
-
-{{- end -}}
+{{- include "fdr-helper.databaseJobsMigrate.tpl" . -}}
+{{ if .Values.loadSeedData }}
+---
+{{- include "fdr-helper.databaseJobsLoadSeedData.tpl" . -}}
+{{ end }}
+---
+{{- include "fdr-helper.databaseSecret.tpl" . -}}
+---
+{{- include "fdr-helper.deployment.tpl" . -}}
