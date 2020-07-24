@@ -1,19 +1,19 @@
 {{- define "fdr-helper.fullApp.tpl" -}}
-{{- include "fdr-helper.databaseJobsMigrate.tpl" . -}}
+{{- include "fdr-helper.databaseJobsMigrate.tpl" . | indent 6 -}}
 {{ if .Values.loadSeedData }}
 ---
-{{- include "fdr-helper.databaseJobsLoadSeedData.tpl" . -}}
+{{- include "fdr-helper.databaseJobsLoadSeedData.tpl" . | indent 8 -}}
 {{ end }}
 ---
-{{- include "fdr-helper.configmap.tpl" . -}}
+{{- include "fdr-helper.configmap.tpl" . | indent 6 -}}
 ---
-{{- include "fdr-helper.databaseSecret.tpl" . -}}
+{{- include "fdr-helper.databaseSecret.tpl" . | indent 6 -}}
 ---
-{{- include "fdr-helper.deployment.tpl" . -}}
+{{- include "fdr-helper.deployment.tpl" . | indent 6 -}}
 ---
-{{- include "fdr-helper.ingress.tpl" . -}}
+{{- include "fdr-helper.ingress.tpl" . | indent 6 -}}
 ---
-{{- include "fdr-helper.service.tpl" . -}}
+{{- include "fdr-helper.service.tpl" . | indent 6 -}}
 {{- end -}}
 {{- define "fdr-helper.fullApp" -}}
 {{- include "fdr-helper.util.merge" (append . "fdr-helper.fullApp.tpl") -}}
