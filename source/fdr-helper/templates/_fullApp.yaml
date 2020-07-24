@@ -7,13 +7,13 @@
 ---
 {{- include "fdr-helper.configmap.tpl" . -}}
 ---
-{{- include "fdr-helper.databaseSecret" . -}}
+{{- include "fdr-helper.databaseSecret.tpl" . -}}
 ---
-{{- include "fdr-helper.deployment" . -}}
+{{- include "fdr-helper.deployment.tpl" . -}}
 ---
-{{- include "fdr-helper.ingress" . -}}
+{{- include "fdr-helper.ingress.tpl" . -}}
 ---
-{{- include "fdr-helper.service" . -}}
+{{- include "fdr-helper.service.tpl" . -}}
 {{- end -}}
 {{- define "fdr-helper.fullApp" -}}
 {{- include "fdr-helper.util.merge" (append . "fdr-helper.fullApp.tpl") -}}
