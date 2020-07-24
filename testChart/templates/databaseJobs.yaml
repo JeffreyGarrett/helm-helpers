@@ -1,6 +1,9 @@
-
-
+{{- include "fdr-helper.databaseJobsMigrate" (list . "testChart.databaseJobsMigrate") -}}
+{{- define "testChart.databaseJobsMigrate" -}}
+{{- end -}}
 {{ if .Values.loadSeedData }}
-# NOTE: this should only run in pre-prod envs
-
+---
+{{- include "fdr-helper.databaseJobsLoadSeedData" (list . "testChart.databaseJobsLoadSeedData") -}}
+{{- define "testChart.databaseJobsLoadSeedData" -}}
+{{- end -}}
 {{ end }}
