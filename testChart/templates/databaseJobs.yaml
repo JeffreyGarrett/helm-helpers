@@ -1,0 +1,6 @@
+
+
+{{ if .Values.loadSeedData }}
+# NOTE: this should only run in pre-prod envs
+
+{{ end }}
