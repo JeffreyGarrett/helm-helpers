@@ -64,3 +64,27 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+tags:
+  # Deploy a Postgres DB instance in Kubernetes:
+  kubeDb: true
+
+# Aliased from "postgresql" chart
+aggregation-db:
+  postgresqlDatabase: aggregation
+  postgresqlUsername: test # DB admin user
+  postgresqlPassword: test # DB admin pass
+  service.port: 5432  # Default
+
+# If defined, will fetch DB connection info from AWS Secrets
+dbSecretName: ''  
+
+seedDataSet: 'development'
+# On initial install, run db:seed to wipe/load test data:
+loadSeedData: false
+# Also run db:seed on upgrades:
+reloadSeedData: false
+authAudience: "https://fdr.cammis-mod-dev.dhcs.ca.gov"
+authClientId: "14fdba92-e67e-4f6d-938f-448239b42e9c"
+authLogLevel: "error"
+authTenant: "265c2dcd-2a6e-43aa-b2e8-26421a8c8526"

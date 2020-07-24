@@ -3,7 +3,7 @@ entries:
   node-api:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-07-23T21:18:03.594808-07:00"
+    created: "2020-07-23T22:55:52.157213-07:00"
     description: A Helm chart for Kubernetes
     digest: 17de4b0985ae672af8b8baf264db4b3e21b44a85fc80ce8eb942a13bd28028af
     name: node-api
@@ -14,12 +14,12 @@ entries:
   secrets-helper:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-07-23T21:18:03.595062-07:00"
+    created: "2020-07-23T22:55:52.157466-07:00"
     description: A Helm chart for Kubernetes
-    digest: a3909f9906ff9d5ffb02b949a95280da55974fa23a7150f2b7782f3a8900bafb
+    digest: 061647b666cd08cad160b9eaabbcd827a6b86854e151652c1f7f093fa0f12edc
     name: secrets-helper
     type: library
     urls:
     - https://jeffreygarrett.github.io/helm-helpers/secrets-helper-0.1.0.tgz
     version: 0.1.0
-generated: "2020-07-23T21:18:03.593493-07:00"
+generated: "2020-07-23T22:55:52.156559-07:00"
