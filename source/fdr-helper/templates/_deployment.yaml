@@ -14,7 +14,7 @@ spec:
   template:
     metadata:
       annotations: 
-       checksum/config: {{ include "fdr-helper.configmap" . | sha256sum }}  
+       checksum/config: {{ include "fdr-helper.configmap.tpl" . | sha256sum }}  
       labels:
         app.kubernetes.io/name: {{ include "application.name" . }}
         app.kubernetes.io/instance: {{ .Release.Name }}
