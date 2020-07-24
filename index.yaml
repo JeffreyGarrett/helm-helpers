@@ -3,9 +3,9 @@ entries:
   fdr-helper:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-07-24T00:08:50.848305-07:00"
+    created: "2020-07-24T00:13:37.995036-07:00"
     description: fdr specific templates
-    digest: 2c243911dfd0306c35c223e5a1489df3293539631a8aaa51489c46d8a78debcf
+    digest: 4ebe0cecfce294f7247fb4dddce69de7d0c6dbcb38998769294c2074efbb0f80
     name: fdr-helper
     type: library
     urls:
@@ -14,7 +14,7 @@ entries:
   fdr-template:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-07-24T00:08:50.848691-07:00"
+    created: "2020-07-24T00:13:37.995446-07:00"
     description: A Helm chart for Kubernetes
     digest: a25b1eb50125f2d43b31bb3648937b7168be48960d611138bd597738a50159b6
     name: fdr-template
@@ -25,7 +25,7 @@ entries:
   node-api:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-07-24T00:08:50.849538-07:00"
+    created: "2020-07-24T00:13:37.996262-07:00"
     description: A Helm chart for Kubernetes
     digest: 17de4b0985ae672af8b8baf264db4b3e21b44a85fc80ce8eb942a13bd28028af
     name: node-api
@@ -36,7 +36,7 @@ entries:
   secrets-helper:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-07-24T00:08:50.849787-07:00"
+    created: "2020-07-24T00:13:37.996512-07:00"
     description: A Helm chart for Kubernetes
     digest: bab03aa11c759d40d69b88a44c55e3cd11a0cf745d302f2cba5080789ba5c42d
     name: secrets-helper
@@ -44,4 +44,4 @@ entries:
     urls:
     - https://jeffreygarrett.github.io/helm-helpers/secrets-helper-0.1.0.tgz
     version: 0.1.0
-generated: "2020-07-24T00:08:50.847245-07:00"
+generated: "2020-07-24T00:13:37.994228-07:00"
