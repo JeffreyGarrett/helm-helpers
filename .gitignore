@@ -1,0 +1,13 @@
+.DS_Store
+# Various IDEs
+.project
+.idea/
+*.tmproj
+.vscode/
+# Various IDEs
+.project
+.idea/
+*.tmproj
+.vscode/
+# charts
+.testChart/charts/*
