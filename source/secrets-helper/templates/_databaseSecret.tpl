@@ -34,6 +34,6 @@ stringData:
 
 
 {{- end -}}
-{{- define "secrets-helper.databaseSecrets" -}}
+{{- define "secrets-helper.databaseSecret" -}}
 {{- include "secrets-helper.util.merge" (append . "secrets-helper.databaseSecrets.tpl") -}}
 {{- end -}}

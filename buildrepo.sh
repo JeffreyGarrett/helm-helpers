@@ -7,7 +7,7 @@ echo "do you want to continue? -- only accepts y"
 read input
 
 if [ "$input" = "y" ]; then
-    echo "deploying building charts"
+    echo "building charts"
     helm package source/*
 
     echo "rebuilding index"
